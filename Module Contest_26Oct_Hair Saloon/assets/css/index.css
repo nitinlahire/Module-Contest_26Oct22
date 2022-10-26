@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Poppins:ital,wght@0,300;0,400;0,700;1,600&family=Vollkorn:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --primary:  #FBB034;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray:  #9A9A9A;
+    --dark-gray:  #565656;
+    --golden: #B48E40;
+
+
+  }
+
+ .primary-btn {
+    background: var(--primary);
+    padding: 18px 53px;
+    color: var(--black);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 106.5%;
+ }
+
+
+  /* Navbar */
+  .nav-list {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-items {
+    list-style: none;
+    margin-right: 50px;
+    color: beige;
+  }
+
+  .nav-items:last-child {
+      margin-left: 100px;
+      margin-right: 0;
+  }
+
+  .nav-items:nth-last-child(2) {
+      margin-right: 0;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 106.5%;
+  }
+  
+  .nav-items:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+  }
+  
+
+  .nav-items a:hover,  .nav-items a.active    {
+    color: var(--primary);
+  }
+
+
+  /* Landing Page */
+  .landing-service-btn {
+    background: var(--black);
+    padding: 18px 53px;
+    color: var(--black);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 106.5%;
+    border: 1px solid var(--white);
+    color: var(--white);
+    margin-left: 40px;
+  }
+
+
+  section#landingPage {
+      /* height: 100vh; */
+      width: 100%;
+      background-image: url('../images/landing_bg.svg');
+  }
+
+  section#landingPage .left-container {
+      max-width: 513px;
+      width: 100%;
+      margin-left: 115px;
+  }
+
+  section#landingPage .greet {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 106.5%;
+    color: var(--primary);
+    margin-bottom: 22px;
+  } 
+
+  section#landingPage .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 94.5%;
+    color: var(--white);
+    margin-bottom: 22px;
+  }
+
+  section#landingPage .content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 106.5%; 
+    color: var(--gray); 
+    margin-bottom: 80px;
+  }
+
+
+  /* About */
+  section#about {
+    width: 100%;
+    background-image: url('../images/bg_about.svg');
+    padding: 100px 0;
+  }
+
+  section#about .img-section {
+      position: relative;
+      height: auto;
+      max-width: 400px;
+      width: 100%;
+      
+  }
+
+  section#about .img-section img {
+      position: absolute;
+  }
+
+  section#about .img-section img.img-first{
+      left: 0;
+      top: 0;
+  }
+
+  section#about .img-section img.img-two{
+    right: 0;
+    top: 0;
+}
+
+section#about .img-section img.img-last{
+    right: 0;
+    bottom: -75px;
+    border: 15px solid var(--white);
+}
+
+
+  section#about .text-section {
+    max-width: 513px;
+    width: 100%;
+  }
+
+
+  section#about .heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%;
+    color: var(--primary);
+    margin-bottom: 22px;
+  } 
+
+  section#about .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 94.5%;
+    color: var(--black);
+    margin-bottom: 22px;
+  }
+
+  section#about .content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%; 
+    color: var(--dark-gray); 
+    margin-bottom: 80px;
+  }
+
+
+
+  /* Booking */
+  section#booking {
+    width: 100%;
+    background-image: url('../images/bg_book.svg');
+    padding: 100px 0;
+  }
+
+
+
+  section#booking .img-section {
+    width: 320px;
+    height: 283px;
+    background: #FFFFFF;
+  }
+
+  section#booking .img-section .phone-icon {
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      background: #E8E8E8;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      margin-top: 60px;
+      
+  }
+
+  section#booking .img-section .call-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 94.5%;
+    color: #B8B8B8;
+  }
+
+  section#booking .img-section .call-no {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 94.5%;
+    color: var(--black);
+    margin-top: 8px;
+  }
+
+
+
+  section#booking .text-section {
+    max-width: 600px;
+    width: 100%;
+  }
+
+
+  section#booking .heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%;
+    color: var(--primary);
+    margin-bottom: 22px;
+  } 
+
+  section#booking .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 94.5%;
+    color: var(--white);
+    margin-bottom: 22px;
+  }
+
+  section#booking .content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%; 
+    color: #B8B8B8;
+    margin-bottom: 80px;
+  }
+
+  /* workingdays */
+  section#workingdays {
+    width: 100%;
+    padding: 100px 0;
+  }
+
+
+  section#workingdays .text-section {
+    max-width: 600px;
+    width: 100%;
+     background: #FBB034;
+     padding: 46px 46px;
+  }
+
+
+  section#workingdays .heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 94.5%;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  } 
+  
+  section#workingdays .sub-head {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%;
+    color: #000000;
+  } 
+
+  section#workingdays .days {
+      border-bottom: 1px dashed var(--black);
+      margin-top: 35px;
+  }
+
+  section#workingdays .days .day {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 94.5%;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+  }
+
+  section#workingdays .days .time{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 94.5%;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+
+  section#workingdays .primary-btn {
+      margin-top: 35px;
+  }
+
+
+
+  /* Footer */
+
+  section#footer {
+      padding: 48px 0;
+      background-color: var(--black);
+  }
+
+  section#footer .footer-header {
+      padding-bottom: 60px;
+  }
+
+  section#footer .footer-header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+  }
+
+
+  section#footer .get-started {
+      padding: 14px;
+      width: 175px;
+      background: #FBB034;
+      border-radius: 8px;
+      color: var(--white);
+      margin-left: 40px;
+  }
+
+  section#footer .footer-content .newsletter {
+      max-width: 300px;
+      width: 100%;
+      
+  }
+
+  section#footer .footer-content ul.linksUl {
+    list-style-type:none;
+  }
+
+
+  section#footer .footer-content ul.linksUl .heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.231818px;
+    color: #FBB034;
+  }
+
+  section#footer .footer-content ul.linksUl li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+   
+  }
+
+  section#footer .footer-content .heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.3px;
+    
+    color: #FFFFFF;
+    
+  }
+
+
+  section#footer .footer-content .next-btn {
+      background: #FBB034;
+      border-radius: 8px 8px 0px 0px;
+      height: 50px;
+      width: 50px;
+      color: #FFFFFF;
+  }
+
+  section#footer .footer-content .email {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  section#footer .footer-bottom {
+      margin-top: 72px;
+  }
+
+  section#footer .footer-bottom a {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.204545px;
+      color: #FFFFFF;
+  }
+
+  /* testimonial */
+
+  section#testimonial {
+    padding: 48px 0;
+    background: #f6f6f6;
+}
+  section#testimonial .text-section {
+    max-width: 420px;
+    width: 100%;
+  }
+
+  section#testimonial .card {
+    background: #FFFFFF;
+    padding: 40px;
+    background-image: url('../images/quote_bg.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 320px;
+    width: 100%;
+    max-height: 285px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 9px 25px 10px rgba(0, 0, 0, 0.01), 5px 14px 9px rgba(0, 0, 0, 0.05), 2px 6px 6px rgba(0, 0, 0, 0.09), 1px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  section#testimonial .card img {
+      height: 80px;
+      width: 80px;
+  }
+
+  section#testimonial .card .name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 106.5%;
+     color: #000000;
+     margin-top: 5px;
+     margin-bottom: 5px;
+  }
+
+  section#testimonial .card:last-child {
+      margin-left: 40px;
+  }
+
+  section#testimonial .card .usertype {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 12px;
+     line-height: 106.5%;
+     color: #CECECE;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+
+  section#testimonial .message {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 106.5%;
+    color: #C2C2C2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  section#testimonial .heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%;
+    color: var(--primary);
+    margin-bottom: 22px;
+  } 
+
+  section#testimonial .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 94.5%;
+    color: var(--black);
+    margin-bottom: 22px;
+  }
+
+  section#testimonial .content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%; 
+    color: #B8B8B8;
+    margin-bottom: 80px;
+  }
+
+
+
+  /* Affliate */
+  section#affiliate {
+    padding: 145px 0;
+    background-image: url('../images/bg-affiliate.svg');
+    background-repeat: no-repeat;
+}
+
+
+section#affiliate .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 106.5%;
+    color: #FBB034;
+    text-align: center;
+}
+
+section#affiliate .content {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 94.5%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 16px 0 50px 0;
+}
+
+
+section#affiliate button {
+    padding: 18px;
+    border: 1px solid #FBB034;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 106.5%;
+    background: transparent;
+    color: #FBB034;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+
+
+
+  
